@@ -1,11 +1,19 @@
-import './App.css'
-import LandingPage from './LandingPage'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
+import BeatLess from "./BeatLess";
+import LandingPage from "./LandingPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+
+  { path: "/beatless", element: <BeatLess /> },
+]);
 
 function App() {
-
-  return (
-    <LandingPage />
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

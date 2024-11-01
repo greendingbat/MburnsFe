@@ -1,5 +1,6 @@
 import profile from "./assets/profile.jpg";
 import resume from "./assets/Burns Resume 2024.pdf";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -8,6 +9,9 @@ const LandingPage = () => {
       <h1>mburns.me</h1>
       <h3>portfolio website for matthew burns</h3>
       <div style={{ display: "flex", flexDirection: "column" }}>
+        <Link to="/beatless">
+          <button>2019 Game Jam Submission</button>
+        </Link>
         <form action="https://github.com/greendingbat">
           <button>GitHub</button>
         </form>
